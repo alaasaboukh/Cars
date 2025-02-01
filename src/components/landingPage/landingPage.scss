@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.landingPage{
+
+    .slider{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        
+        img{
+            width: 100%;
+            height: calc(100vh - 70px);
+            object-fit: cover;
+        }
+        
+        h2{
+            position: absolute;
+            bottom: 50px;
+        }
+        p{
+            position: absolute;
+            bottom: 25px;
+            color: #ddd;
+        }
+    }
+
+    .arrow{
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        cursor: pointer;
+
+        &.left{
+            top: 40%;
+            left: 30px;
+        }
+        &.right{
+            top: 40%;
+            right: 30px;
+            transform: rotate(180deg);
+        }
+    }
+}

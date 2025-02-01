@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+
+    .wrapper {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+
+        @include mobile{
+            width: 300px;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label{
+                display: block;
+                text-align: left;
+                font-size: 13px;
+                margin-bottom: 5px;
+            }
+            
+            input{
+                width: 95%;
+                border-radius: 5px;
+                border: 1px solid #888;
+                padding: 8px 0;
+                margin-bottom: 20px;
+                text-indent: 5px;
+                
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            textarea{
+                height: 100px;
+                width: 94%;
+                border-radius: 5px;
+                text-indent: 5px;
+                margin-bottom: 20px;
+                resize: none;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            button{
+                width: 95%;
+                padding: 10px 0;
+                border-radius: 5px;
+                background-color: $maincolor;
+                color: white;
+                cursor: pointer;
+                border: 1px solid $maincolor;
+            }
+        }
+    }
+}
